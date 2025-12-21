@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Upload Photos</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Upload Photos</h1>
+      <p class="subtitle">Share your photos and videos with the couple.</p>
+      <p id="uploadCounter" class="subtitle">📸 Loading uploads…</p>
+    </div>
+
+    <div class="card">
+      <form id="photoForm">
+        <div class="label">Select photo or video</div>
+
+        <input
+          type="file"
+          id="photoInput"
+          accept="image/*,video/*"
+          required
+        />
+
+        <div style="margin-top:12px;">
+          <button class="button" type="submit">
+            <div class="btn-left">
+              <div class="btn-title">Upload</div>
+              <div class="btn-desc">Share your memories 📸</div>
+            </div>
+            <div class="pill">⬆️</div>
+          </button>
+        </div>
+
+        <div class="result" id="photoResultContainer" style="display:none;">
+          <div id="photoResult"></div>
+        </div>
+
+        <div class="nav">
+          <a href="index.html">← Back to Home</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+

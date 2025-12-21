@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Find My Table</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Find My Table</h1>
+      <p class="subtitle">Enter your name to see your table assignment.</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div>
+          <div class="label">First name</div>
+          <input id="firstName" placeholder="First name" />
+        </div>
+        <div>
+          <div class="label">Last name</div>
+          <input id="lastName" placeholder="Last name" />
+        </div>
+      </div>
+
+      <div style="margin-top:12px;">
+        <button class="button" onclick="findTable()">
+          <div class="btn-left">
+            <div class="btn-title">Find My Seat</div>
+            <div class="btn-desc">Instant lookup</div>
+          </div>
+          <div class="pill">🔎</div>
+        </button>
+      </div>
+
+      <div class="result" style="display:none;">
+        <div id="tableResult"></div>
+      </div>
+
+      <p class="small" style="margin-top:10px;">
+        Tip: If your name doesn’t show up later, try just your last name.
+      </p>
+
+      <div class="nav"><a href="index.html">← Back to Home</a></div>
+    </div>
+  </div>
+</body>
+</html>

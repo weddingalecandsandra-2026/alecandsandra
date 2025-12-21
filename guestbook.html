@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Digital Guestbook</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Digital Guestbook</h1>
+      <p class="subtitle">Leave a message for the couple 💌</p>
+    </div>
+
+    <div class="card">
+      <div class="label">Your name (optional)</div>
+      <input id="gbName" placeholder="e.g., John & Jane" />
+
+      <div style="margin-top:12px;" class="label">Message</div>
+      <textarea id="gbMessage" placeholder="Write your message here..."></textarea>
+
+      <div style="margin-top:12px;">
+        <button class="button" onclick="submitGuestbook()">
+          <div class="btn-left">
+            <div class="btn-title">Submit Message</div>
+            <div class="btn-desc">Thank you for celebrating with us</div>
+          </div>
+          <div class="pill">💌</div>
+        </button>
+      </div>
+
+      <div class="result" style="display:none;">
+        <div id="gbResult"></div>
+      </div>
+
+      <div class="nav"><a href="index.html">← Back to Home</a></div>
+    </div>
+  </div>
+</body>
+</html>
