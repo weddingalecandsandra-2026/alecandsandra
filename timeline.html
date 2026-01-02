@@ -5,6 +5,44 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Wedding Timeline</title>
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .timeline-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .timeline-card:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+    }
+
+    .timeline-time {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .timeline-event {
+      font-size: 1.05rem;
+      font-weight: 500;
+      text-align: right;
+      margin-left: 14px;
+    }
+
+    .timeline-card.highlight {
+      background: #faf7f2;
+      border-left: 5px solid #d6b98c;
+    }
+  </style>
 </head>
 
 <body>
@@ -16,69 +54,69 @@
 
     <div class="card">
 
-      <div class="timeline-item">
-        <span class="time">3:55 PM</span>
-        <span class="event">Guest Arrival</span>
+      <div class="timeline-card">
+        <div class="timeline-time">3:55 PM</div>
+        <div class="timeline-event">Guest Arrival</div>
       </div>
 
-      <div class="timeline-item">
-        <span class="time">4:00 PM</span>
-        <span class="event">Cocktail Hour Begins</span>
+      <div class="timeline-card">
+        <div class="timeline-time">4:00 PM</div>
+        <div class="timeline-event">Cocktail Hour Begins</div>
       </div>
 
-      <div class="timeline-item">
-        <span class="time">5:00 PM</span>
-        <span class="event">Guests Asked to Be Seated</span>
+      <div class="timeline-card">
+        <div class="timeline-time">5:00 PM</div>
+        <div class="timeline-event">Guests Asked to Be Seated</div>
       </div>
 
-      <div class="timeline-item highlight">
-        <span class="time">5:15 PM</span>
-        <span class="event">Grand Entrance of Mr. & Mrs.</span>
+      <div class="timeline-card highlight">
+        <div class="timeline-time">5:15 PM</div>
+        <div class="timeline-event">Grand Entrance of Mr. &amp; Mrs.</div>
       </div>
 
-      <div class="timeline-item">
-        <span class="time">5:17 PM</span>
-        <span class="event">First Dance</span>
+      <div class="timeline-card">
+        <div class="timeline-time">5:17 PM</div>
+        <div class="timeline-event">First Dance</div>
       </div>
 
-      <div class="timeline-item">
-        <span class="time">5:23 PM</span>
-        <span class="event">Dinner Blessing</span>
+      <div class="timeline-card">
+        <div class="timeline-time">5:23 PM</div>
+        <div class="timeline-event">Dinner Blessing</div>
       </div>
 
-      <div class="timeline-item">
-        <span class="time">5:25 PM</span>
-        <span class="event">Dinner Service Begins</span>
+      <div class="timeline-card">
+        <div class="timeline-time">5:25 PM</div>
+        <div class="timeline-event">Dinner Service Begins</div>
       </div>
 
-      <div class="timeline-item">
-        <span class="time">6:25 PM</span>
-        <span class="event">Toasts</span>
+      <div class="timeline-card">
+        <div class="timeline-time">6:25 PM</div>
+        <div class="timeline-event">Toasts</div>
       </div>
 
-      <div class="timeline-item">
-        <span class="time">6:40 PM</span>
-        <span class="event">Open Dancing</span>
+      <div class="timeline-card">
+        <div class="timeline-time">6:40 PM</div>
+        <div class="timeline-event">Open Dancing</div>
       </div>
 
-      <div class="timeline-item">
-        <span class="time">7:20 PM</span>
-        <span class="event">Cake Cutting</span>
+      <div class="timeline-card">
+        <div class="timeline-time">7:20 PM</div>
+        <div class="timeline-event">Cake Cutting</div>
       </div>
 
-      <div class="timeline-item">
-        <span class="time">8:30 PM</span>
-        <span class="event">Last Call</span>
+      <div class="timeline-card">
+        <div class="timeline-time">8:30 PM</div>
+        <div class="timeline-event">Last Call</div>
       </div>
 
-      <div class="timeline-item highlight">
-        <span class="time">8:55 PM</span>
-        <span class="event">Grand Send-Off</span>
+      <div class="timeline-card highlight">
+        <div class="timeline-time">8:55 PM</div>
+        <div class="timeline-event">Grand Send-Off</div>
       </div>
 
-      <div class="timeline-item">
-        <span class="time">9:00 PM</span>
-        <span class="event">Reception Concludes</span>
+      <div class="timeline-card">
+        <div class="timeline-time">9:00 PM</div>
+        <div class="timeline-event">Reception Concludes</div>
       </div>
 
       <div class="nav">
